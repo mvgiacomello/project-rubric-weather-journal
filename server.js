@@ -1,4 +1,3 @@
-const path = require('path');
 const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
@@ -10,7 +9,7 @@ const projectData = [];
 
 server.use(cors());
 server.use(bodyParser.json());
-server.use('/', express.static(path.join(__dirname, './../app/')));
+server.use('/', express.static('./app/'));
 
 server.get('/api/data', (_req, res) => {
     console.log('Request received on [GET] /api/data');
