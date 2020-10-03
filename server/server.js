@@ -6,7 +6,7 @@ const bodyParser = require('body-parser');
 const server = express();
 
 const port = 8080;
-const projectData = [{ 'test': 'test' }];
+const projectData = [];
 
 server.use(cors());
 server.use(bodyParser.json());
